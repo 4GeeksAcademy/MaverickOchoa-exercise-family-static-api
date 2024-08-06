@@ -12,7 +12,17 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 CORS(app)
 
+
+
 # create the jackson family object
+
+memers = [
+    {
+        "name": "John Jackson",
+        "edad": "33 Years old",
+        "lucky_numbers": "15, 13, 12"
+    }
+]
 jackson_family = FamilyStructure("Jackson")
 
 # Handle/serialize errors like a JSON object
